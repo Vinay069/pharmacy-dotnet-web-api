@@ -1,0 +1,30 @@
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Pharmacy Management System.exe
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Pharmacy Management System.deps.json
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Pharmacy Management System.runtimeconfig.json
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Pharmacy Management System.runtimeconfig.dev.json
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Pharmacy Management System.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Pharmacy Management System.pdb
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.csproj.AssemblyReference.cache
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.AssemblyInfoInputs.cache
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.AssemblyInfo.cs
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.csproj.CoreCompileInputs.cache
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.MvcApplicationPartsAssemblyInfo.cache
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\staticwebassets\Pharmacy Management System.StaticWebAssets.Manifest.cache
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.RazorTargetAssemblyInfo.cache
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.csproj.CopyComplete
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.pdb
+D:\Project CTS\Pharmacy\Pharmacy Management System\obj\Debug\netcoreapp3.1\Pharmacy Management System.genruntimeconfig.cache
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Project CTS\Pharmacy\Pharmacy Management System\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
