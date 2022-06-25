@@ -1,31 +1,27 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Pharmacy_Management_System.Models;
 using System.Data;
 using System.Data.SqlClient;
 
-
 namespace Pharmacy_Management_System.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DepartmentController : ControllerBase
+    public class MedicinesController : ControllerBase
     {
-        //using dependency injeciton to read the connectionstring from appsettings file
         private readonly IConfiguration _configuration;
-        public DepartmentController(IConfiguration configuration)
+        public MedicinesController(IConfiguration configuration)
         {
             _configuration = configuration;
         }
 
-        //API Method to get all data from department table
         [HttpGet]
         public JsonResult Get()
         {
             string query = @"
-                            select DepartmentId, DepartmentName from
-                            dbo.Department
+                            select MedicineId, MedicineName, DateOfManufacture, DateOfExpiry,MedicineQuantity,MedicinePricePerUnit from
+                            dbo.Medicines
                             ";
             //here we got data in the data table object
             DataTable table = new DataTable();
@@ -50,17 +46,22 @@ namespace Pharmacy_Management_System.Controllers
             return new JsonResult(table);
         }
 
-        //POST method to insert new records in department table
         [HttpPost]
-        public JsonResult Post(Department dep)//Department is coming from Department models Department Model "using Pharmacy_Management_System.Models; "
-                                              //we will be sending the department object to our post object in the form body
+        public JsonResult Post(Medicines med)
         {
             string query = @"
-                           insert into dbo.Department
-                           values (@DepartmentName)
+                            insert into dbo.Medicines 
+                            (MedicineId, MedicineName, DateOfManufacture, DateOfExpiry,
+                                MedicineQuantity,MedicinePricePerUnit) values
+                               (@MedicineId, @MedicineName, @DateOfManufacture, @DateOfExpiry,
+                                @MedicineQuantity,@MedicinePricePerUnit)
+                            
                             ";
-
+            
             DataTable table = new DataTable();
+
+           
+
             string sqlDataSource = _configuration.GetConnectionString("PharmacyAppCon");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
@@ -68,27 +69,40 @@ namespace Pharmacy_Management_System.Controllers
                 myCon.Open();
                 using (SqlCommand myCommand = new SqlCommand(query, myCon))
                 {
-                    myCommand.Parameters.AddWithValue("@DepartmentName", dep.DepartmentName);
+                    myCommand.Parameters.AddWithValue("@MedicineName", med.MedicineName);
+                    myCommand.Parameters.AddWithValue("@DateOfManufacture", med.DateOfManufacture);
+                    myCommand.Parameters.AddWithValue("@DateOfExpiry", med.DateOfExpiry);
+                    myCommand.Parameters.AddWithValue("@MedicineQuantity", med.MedicineQuantity);
+                    myCommand.Parameters.AddWithValue("@MedicinePricePerUnit", med.MedicinePricePerUnit);
                     myReader = myCommand.ExecuteReader();
+                    //filling the data in the data table using sql datareader
                     table.Load(myReader);
                     myReader.Close();
                     myCon.Close();
                 }
             }
-
-            return new JsonResult("Added Successfully");
+            //finally returning this data in json format
+            return new JsonResult("Medicine Added Successfully");
         }
-        //PUT method to update the records
+
         [HttpPut]
-        public JsonResult Put(Department dep)
+        public JsonResult Put(Medicines med)
         {
             string query = @"
-                           update dbo.Department
-                           set DepartmentName= @DepartmentName
-                            where DepartmentId=@DepartmentId
-                            ";
+                            update  dbo.Medicines
+                            set
+                            MedicineId=@MedicineId, 
+                            MedicineName=@MedicineName,
+                            DateOfManufacture=@DateOfManufacture,
+                            DateOfExpiry=@DateOfExpiry,
+                            MedicineQuantity=@MedicineQuantity,
+                            MedicinePricePerUnit=@MedicinePricePerUnit)
+                             ";
 
             DataTable table = new DataTable();
+
+
+
             string sqlDataSource = _configuration.GetConnectionString("PharmacyAppCon");
             SqlDataReader myReader;
             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
@@ -96,25 +110,28 @@ namespace Pharmacy_Management_System.Controllers
                 myCon.Open();
                 using (SqlCommand myCommand = new SqlCommand(query, myCon))
                 {
-                    myCommand.Parameters.AddWithValue("@DepartmentId", dep.DepartmentId);
-                    myCommand.Parameters.AddWithValue("@DepartmentName", dep.DepartmentName);
+                    myCommand.Parameters.AddWithValue("@MedicineId", med.MedicineId);
+                    myCommand.Parameters.AddWithValue("@MedicineName", med.MedicineName);
+                    myCommand.Parameters.AddWithValue("@DateOfManufacture", med.DateOfManufacture);
+                    myCommand.Parameters.AddWithValue("@DateOfExpiry", med.DateOfExpiry);
+                    myCommand.Parameters.AddWithValue("@MedicineQuantity", med.MedicineQuantity);
+                    myCommand.Parameters.AddWithValue("@MedicinePricePerUnit", med.MedicinePricePerUnit);
                     myReader = myCommand.ExecuteReader();
+                    //filling the data in the data table using sql datareader
                     table.Load(myReader);
                     myReader.Close();
                     myCon.Close();
                 }
             }
-
-            return new JsonResult("Updated Successfully");
+            //finally returning this data in json format
+            return new JsonResult("Medicine Details Updated Successfully");
         }
-
-        //Delete method
         [HttpDelete("{id}")]
         public JsonResult Delete(int id)
         {
             string query = @"
-                           delete from dbo.Department
-                            where DepartmentId=@DepartmentId
+                           delete from dbo.Medicines
+                            where MedicinesId=@MedicinesId
                             ";
 
             DataTable table = new DataTable();
@@ -125,7 +142,7 @@ namespace Pharmacy_Management_System.Controllers
                 myCon.Open();
                 using (SqlCommand myCommand = new SqlCommand(query, myCon))
                 {
-                    myCommand.Parameters.AddWithValue("@DepartmentId", id);
+                    myCommand.Parameters.AddWithValue("@MedicineId", id);
 
                     myReader = myCommand.ExecuteReader();
                     table.Load(myReader);
@@ -134,8 +151,8 @@ namespace Pharmacy_Management_System.Controllers
                 }
             }
 
-            return new JsonResult("Deleted Successfully");
+            return new JsonResult("Medicine Deleted Successfully");
         }
-
     }
+
 }
