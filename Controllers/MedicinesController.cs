@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Pharmacy_Management_System.Models;
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using Microsoft.AspNetCore.Hosting;
+using System.IO;
 
 namespace Pharmacy_Management_System.Controllers
 {
@@ -51,9 +54,9 @@ namespace Pharmacy_Management_System.Controllers
         {
             string query = @"
                             insert into dbo.Medicines 
-                            (MedicineId, MedicineName, DateOfManufacture, DateOfExpiry,
+                            (MedicineName, DateOfManufacture, DateOfExpiry,
                                 MedicineQuantity,MedicinePricePerUnit) values
-                               (@MedicineId, @MedicineName, @DateOfManufacture, @DateOfExpiry,
+                               (@MedicineName, @DateOfManufacture, @DateOfExpiry,
                                 @MedicineQuantity,@MedicinePricePerUnit)
                             
                             ";
@@ -69,6 +72,9 @@ namespace Pharmacy_Management_System.Controllers
                 myCon.Open();
                 using (SqlCommand myCommand = new SqlCommand(query, myCon))
                 {
+
+                    
+
                     myCommand.Parameters.AddWithValue("@MedicineName", med.MedicineName);
                     myCommand.Parameters.AddWithValue("@DateOfManufacture", med.DateOfManufacture);
                     myCommand.Parameters.AddWithValue("@DateOfExpiry", med.DateOfExpiry);
@@ -91,12 +97,13 @@ namespace Pharmacy_Management_System.Controllers
             string query = @"
                             update  dbo.Medicines
                             set
-                            MedicineId=@MedicineId, 
+                             
                             MedicineName=@MedicineName,
                             DateOfManufacture=@DateOfManufacture,
                             DateOfExpiry=@DateOfExpiry,
                             MedicineQuantity=@MedicineQuantity,
-                            MedicinePricePerUnit=@MedicinePricePerUnit)
+                            MedicinePricePerUnit=@MedicinePricePerUnit
+                            where MedicineId=@MedicineId
                              ";
 
             DataTable table = new DataTable();
@@ -131,7 +138,7 @@ namespace Pharmacy_Management_System.Controllers
         {
             string query = @"
                            delete from dbo.Medicines
-                            where MedicinesId=@MedicinesId
+                            where MedicineId=@MedicineId
                             ";
 
             DataTable table = new DataTable();
@@ -153,6 +160,7 @@ namespace Pharmacy_Management_System.Controllers
 
             return new JsonResult("Medicine Deleted Successfully");
         }
+
     }
 
 }
