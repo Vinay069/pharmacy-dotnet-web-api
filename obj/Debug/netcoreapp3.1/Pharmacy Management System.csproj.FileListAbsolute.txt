@@ -63,3 +63,40 @@ C:\Users\vny06\Documents\CTS Proj\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.
 C:\Users\vny06\Documents\CTS Proj\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\vny06\Documents\CTS Proj\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\vny06\Documents\CTS Proj\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.MvcApplicationPartsAssemblyInfo.cs
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Pharmacy Management System.exe
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Pharmacy Management System.deps.json
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Pharmacy Management System.runtimeconfig.json
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Pharmacy Management System.runtimeconfig.dev.json
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Pharmacy Management System.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Pharmacy Management System.pdb
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.csproj.AssemblyReference.cache
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.GeneratedMSBuildEditorConfig.editorconfig
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.AssemblyInfoInputs.cache
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.AssemblyInfo.cs
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.csproj.CoreCompileInputs.cache
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.MvcApplicationPartsAssemblyInfo.cs
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.MvcApplicationPartsAssemblyInfo.cache
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\staticwebassets\Pharmacy Management System.StaticWebAssets.Manifest.cache
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\staticwebassets\Pharmacy Management System.StaticWebAssets.xml
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\scopedcss\bundle\Pharmacy Management System.styles.css
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.RazorTargetAssemblyInfo.cache
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.csproj.CopyComplete
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.dll
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.pdb
+D:\Pharmacy\pharmacy-dotnet-web-api\obj\Debug\netcoreapp3.1\Pharmacy Management System.genruntimeconfig.cache
